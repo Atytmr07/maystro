@@ -22,6 +22,21 @@ export const metadata: Metadata = {
   description:
     "Lara'nın kalbinde premium güzellik deneyimi. Saç tasarımı, manikür, ipek kirpik ve daha fazlası.",
   keywords: ["güzellik salonu", "kuaför", "manikür", "ipek kirpik", "Lara", "Antalya"],
+  openGraph: {
+    title: "Maystro Hair & Nail | Lara, Antalya",
+    description:
+      "Lara'nın kalbinde premium güzellik deneyimi. Saç tasarımı, manikür, ipek kirpik ve daha fazlası.",
+    images: [
+      {
+        url: "/logo.png",
+        width: 1200,
+        height: 1200,
+        alt: "Maystro Hair & Nail Logo",
+      },
+    ],
+    url: "https://maystro.vercel.app",
+    type: "website",
+  },
 };
 
 const localBusinessSchema = {
