@@ -35,7 +35,7 @@ function GalleryPhoto({
       initial={shouldReduce ? false : { opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-50px" }}
-      transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1], delay: index * 0.07 }}
+      transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] as any, delay: index * 0.07 }}
       className="relative block overflow-hidden rounded-xl border border-[#1C1917]/8 group cursor-pointer bg-[#E8E3D8]"
       style={{ aspectRatio: "3/4" }}
     >

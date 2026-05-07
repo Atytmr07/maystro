@@ -22,7 +22,7 @@ export function LocationSection() {
           initial={shouldReduce ? false : { opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-60px" }}
-          transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+          transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] as any }}
           className="mb-12"
         >
           <p className="text-[10px] tracking-[0.35em] text-[#78716C] uppercase mb-4">
@@ -39,7 +39,7 @@ export function LocationSection() {
             initial={shouldReduce ? false : { opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-60px" }}
-            transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1], delay: 0.1 }}
+            transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] as any, delay: 0.1 }}
             className="lg:col-span-2 flex flex-col gap-6"
           >
             {/* Address */}
@@ -85,7 +85,7 @@ export function LocationSection() {
             initial={shouldReduce ? false : { opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-60px" }}
-            transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1], delay: 0.15 }}
+            transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] as any, delay: 0.15 }}
             className="lg:col-span-3 rounded-2xl overflow-hidden border border-[#1C1917]/10 shadow-sm"
             style={{ aspectRatio: "4/3" }}
           >

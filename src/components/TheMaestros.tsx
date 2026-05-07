@@ -63,7 +63,7 @@ export function TheMaestros() {
               initial={shouldReduce ? false : { opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-40px" }}
-              transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1], delay: i * 0.06 }}
+              transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] as any, delay: i * 0.06 }}
               /* last card centred on 2-col mobile grid */
               className={i === 4 ? "col-span-2 sm:col-span-1" : ""}
             >

@@ -78,7 +78,7 @@ export function ServicesMatrix() {
                 initial={shouldReduce ? false : { opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-60px" }}
-                transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1], delay: i * 0.07 }}
+                transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] as any, delay: i * 0.07 }}
                 className={`${gridSpans[i]} ${cardAccents[i]} border border-[#1C1917]/10 rounded-2xl p-8 flex flex-col gap-6 group hover:border-[#1C1917]/25 transition-colors duration-300`}
               >
                 {/* Card header */}

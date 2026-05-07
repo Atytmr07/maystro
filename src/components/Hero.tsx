@@ -102,7 +102,7 @@ export function Hero() {
   const fadeUp = (delay = 0) => ({
     initial: shouldReduce ? false : { opacity: 0, y: 28 },
     animate: { opacity: 1, y: 0 },
-    transition: { duration: 0.75, ease: [0.22, 1, 0.36, 1], delay },
+    transition: { duration: 0.75, ease: [0.22, 1, 0.36, 1] as any, delay },
   });
 
   return (
@@ -173,7 +173,7 @@ export function Hero() {
       <motion.div
         initial={shouldReduce ? false : { opacity: 0, x: 40 }}
         animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1, ease: [0.22, 1, 0.36, 1], delay: 0.2 }}
+        transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] as any, delay: 0.2 }}
         className="hidden lg:block relative w-[420px] xl:w-[480px] flex-shrink-0"
       >
         <HeroPhotoPanel />

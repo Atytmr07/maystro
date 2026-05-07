@@ -70,7 +70,7 @@ export function Testimonials() {
               initial={shouldReduce ? false : { opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
-              transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1], delay: i * 0.07 }}
+              transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] as any, delay: i * 0.07 }}
               className="bg-[#F2EFE6] border border-[#1C1917]/8 rounded-2xl p-7 flex flex-col gap-4"
             >
               <Stars />
