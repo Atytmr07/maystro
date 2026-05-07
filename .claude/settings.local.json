@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 \"C:\\\\Users\\\\atayt\\\\AppData\\\\Roaming\\\\Claude\\\\local-agent-mode-sessions\\\\skills-plugin\\\\39f6c7c7-7c70-4187-8023-0ab3dd007d7e\\\\3fcb9183-abff-4231-b10d-fa3ea2da112a\\\\skills\\\\ui-ux-pro-max\\\\scripts\\\\search.py\" \"luxury beauty hair nail salon japanese minimalism organic botanical elegant premium\" --design-system -p \"Maystro Hair & Nail\")",
+      "Bash(py --version)",
+      "Bash(python \"C:\\\\Users\\\\atayt\\\\AppData\\\\Roaming\\\\Claude\\\\local-agent-mode-sessions\\\\skills-plugin\\\\39f6c7c7-7c70-4187-8023-0ab3dd007d7e\\\\3fcb9183-abff-4231-b10d-fa3ea2da112a\\\\skills\\\\ui-ux-pro-max\\\\scripts\\\\search.py\" \"animation accessibility motion beauty landing\" --domain ux)",
+      "Bash(python \"C:\\\\Users\\\\atayt\\\\AppData\\\\Roaming\\\\Claude\\\\local-agent-mode-sessions\\\\skills-plugin\\\\39f6c7c7-7c70-4187-8023-0ab3dd007d7e\\\\3fcb9183-abff-4231-b10d-fa3ea2da112a\\\\skills\\\\ui-ux-pro-max\\\\scripts\\\\search.py\" \"hero social-proof testimonial service booking\" --domain landing)",
+      "PowerShell(cmd /c \"dir C:\\\\Projects\\\\websites\\\\maystro /a\")",
+      "mcp__Claude_in_Chrome__tabs_context_mcp",
+      "mcp__Claude_Preview__preview_start",
+      "PowerShell($proc = Get-NetTCPConnection -LocalPort 3000 -State Listen -ErrorAction SilentlyContinue | Select-Object -First 1 -ExpandProperty OwningProcess; if \\($proc\\) { Stop-Process -Id $proc -Force; \"Killed PID $proc\" } else { \"Nothing on 3000\" })",
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\atayt\\\\Downloads\" | Where-Object { \\($_.Extension -match '\\\\.\\(jpg|jpeg|png|webp\\)$'\\) -and \\($_.LastWriteTime -gt \\(Get-Date\\).AddHours\\(-2\\)\\) } | Sort-Object LastWriteTime -Descending | ForEach-Object { \"$\\($_.Name\\) | $\\([math]::Round\\($_.Length/1KB\\)\\) KB\" })",
+      "Bash(ls -lt /tmp | head -15)",
+      "Bash(git init *)"
+    ]
+  }
+}
