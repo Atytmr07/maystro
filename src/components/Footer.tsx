@@ -21,16 +21,20 @@ export function Footer() {
   const { t } = useLang();
 
   return (
-    <footer className="bg-[#1C1917] text-white">
+    <footer className="bg-[#3A1F1A] text-white">
       {/* Main content */}
       <div className="max-w-7xl mx-auto px-6 pt-16 pb-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-16">
           {/* Brand column */}
           <div>
-            {/* Logo — cream bg container so it stays readable on dark footer */}
-            <div className="mb-5 inline-block bg-[#F2EFE6] rounded-xl p-2">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/logo.png" alt="Maystro Hair & Nail" className="h-16 w-16 object-contain" />
+            {/* Text wordmark */}
+            <div className="mb-5">
+              <span className="font-serif text-3xl font-semibold tracking-[0.18em] text-white block">
+                MAYSTRO
+              </span>
+              <span className="text-[10px] tracking-[0.4em] text-[#E8896E] uppercase mt-2 block">
+                Hair &amp; Nail
+              </span>
             </div>
             <p className="text-sm text-white/55 leading-relaxed">
               Hijyenik · Profesyonel · Kaliteli Hizmet

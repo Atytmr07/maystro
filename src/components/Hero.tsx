@@ -21,7 +21,7 @@ function SakuraWatermark() {
     <svg
       aria-hidden="true"
       viewBox="0 0 600 600"
-      className="absolute inset-0 w-full h-full text-[#1C1917] opacity-[0.04] pointer-events-none"
+      className="absolute inset-0 w-full h-full text-[#3A1F1A] opacity-[0.04] pointer-events-none"
       fill="currentColor"
       preserveAspectRatio="xMidYMid slice"
     >
@@ -79,7 +79,7 @@ function HeroPhotoPanel() {
       {heroPanelPhotos.map((photo, i) => (
         <div
           key={photo.src}
-          className={`relative flex-1 overflow-hidden rounded-2xl border border-[#1C1917]/8 ${
+          className={`relative flex-1 overflow-hidden rounded-2xl border border-[#3A1F1A]/8 ${
             i === 1 ? "ml-8" : i === 2 ? "ml-4" : ""
           }`}
         >
@@ -115,23 +115,23 @@ export function Hero() {
         <div className="relative z-10 max-w-xl">
           <motion.p
             {...fadeUp(0)}
-            className="text-[10px] tracking-[0.35em] text-[#78716C] uppercase mb-6"
+            className="text-[10px] tracking-[0.35em] text-[#9B7B72] uppercase mb-6"
           >
             Lara · Antalya
           </motion.p>
 
           <motion.h1
             {...fadeUp(0.1)}
-            className="font-serif text-5xl md:text-6xl lg:text-7xl font-semibold text-[#1C1917] leading-[1.05] tracking-tight mb-6"
+            className="font-serif text-5xl md:text-6xl lg:text-7xl font-semibold text-[#3A1F1A] leading-[1.05] tracking-tight mb-6"
           >
             {t.hero.headline}
           </motion.h1>
 
-          <motion.div {...fadeUp(0.18)} className="w-10 h-px bg-[#1C1917]/25 mb-6" />
+          <motion.div {...fadeUp(0.18)} className="w-10 h-px bg-[#3A1F1A]/25 mb-6" />
 
           <motion.p
             {...fadeUp(0.22)}
-            className="text-base md:text-lg text-[#78716C] font-light leading-relaxed mb-9 max-w-md"
+            className="text-base md:text-lg text-[#9B7B72] font-light leading-relaxed mb-9 max-w-md"
           >
             {t.hero.sub}
           </motion.p>
@@ -141,7 +141,7 @@ export function Hero() {
             href={WA_LINK}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2.5 bg-[#1C1917] text-white text-sm font-medium px-8 py-4 rounded-full hover:bg-[#44403C] transition-colors duration-200 cursor-pointer"
+            className="inline-flex items-center gap-2.5 bg-[#E8896E] text-[#3A1F1A] text-sm font-semibold px-8 py-4 rounded-full hover:bg-[#C44536] hover:text-white transition-colors duration-200 cursor-pointer shadow-[0_4px_20px_rgba(232,137,110,0.35)]"
           >
             <WhatsAppIcon />
             {t.hero.cta}
@@ -154,10 +154,10 @@ export function Hero() {
           >
             {badges.map(({ Icon, key }) => (
               <div key={key} className="flex items-center gap-2">
-                <span className="w-7 h-7 rounded-full border border-[#1C1917]/12 flex items-center justify-center bg-[#1C1917]/3">
-                  <Icon size={12} className="text-[#78716C]" aria-hidden="true" />
+                <span className="w-7 h-7 rounded-full border border-[#3A1F1A]/12 flex items-center justify-center bg-[#3A1F1A]/3">
+                  <Icon size={12} className="text-[#9B7B72]" aria-hidden="true" />
                 </span>
-                <span className="text-xs text-[#78716C]">{t.hero[key]}</span>
+                <span className="text-xs text-[#9B7B72]">{t.hero[key]}</span>
               </div>
             ))}
           </motion.div>
@@ -165,7 +165,7 @@ export function Hero() {
 
         {/* Scroll cue */}
         <div className="absolute bottom-10 left-1/2 -translate-x-1/2 pointer-events-none hidden lg:block">
-          <div className="w-px h-10 bg-gradient-to-b from-[#1C1917]/20 to-transparent" />
+          <div className="w-px h-10 bg-gradient-to-b from-[#3A1F1A]/20 to-transparent" />
         </div>
       </div>
 
@@ -178,7 +178,7 @@ export function Hero() {
       >
         <HeroPhotoPanel />
         {/* Soft left-edge bleed into bg */}
-        <div className="absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-[#F2EFE6] to-transparent pointer-events-none z-10" />
+        <div className="absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-[#FFF5F0] to-transparent pointer-events-none z-10" />
       </motion.div>
 
     </section>

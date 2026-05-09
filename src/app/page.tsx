@@ -10,7 +10,7 @@ import { WhatsAppButton } from "@/components/WhatsAppButton";
 
 export default function Home() {
   return (
-    <main className="bg-[#F2EFE6]">
+    <main className="bg-[#FFF5F0]">
       <Navbar />
       <Hero />
       <ServicesMatrix />

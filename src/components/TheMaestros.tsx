@@ -46,13 +46,13 @@ export function TheMaestros() {
   const shouldReduce = useReducedMotion();
 
   return (
-    <section className="py-24 md:py-32 px-6 bg-[#EAE5DA]">
+    <section className="py-24 md:py-32 px-6 bg-[#FBE0D2]">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="mb-16 text-center">
-          <p className="text-[10px] tracking-[0.35em] text-[#78716C] uppercase mb-4">Studio</p>
-          <h2 className="font-serif text-4xl md:text-5xl text-[#1C1917]">{t.team.title}</h2>
-          <p className="mt-4 text-sm text-[#78716C]">{t.team.sub}</p>
+          <p className="text-[10px] tracking-[0.35em] text-[#9B7B72] uppercase mb-4">Studio</p>
+          <h2 className="font-serif text-4xl md:text-5xl text-[#3A1F1A]">{t.team.title}</h2>
+          <p className="mt-4 text-sm text-[#9B7B72]">{t.team.sub}</p>
         </div>
 
         {/* Cards grid: 2 → 3 → 5 */}
@@ -70,7 +70,7 @@ export function TheMaestros() {
               <div className="group cursor-default">
                 {/* Portrait */}
                 <div
-                  className="relative aspect-[3/4] rounded-xl overflow-hidden mb-4 border border-[#1C1917]/8 transition-all duration-500 group-hover:border-[#1C1917]/20"
+                  className="relative aspect-[3/4] rounded-xl overflow-hidden mb-4 border border-[#3A1F1A]/8 transition-all duration-500 group-hover:border-[#3A1F1A]/20"
                   style={{
                     background: `linear-gradient(160deg, ${person.from}, ${person.to})`,
                     filter: "grayscale(0%)",
@@ -101,10 +101,10 @@ export function TheMaestros() {
                 </div>
 
                 {/* Name & role */}
-                <p className="font-serif text-sm font-medium text-[#1C1917] leading-snug">
+                <p className="font-serif text-sm font-medium text-[#3A1F1A] leading-snug">
                   {person.name}
                 </p>
-                <p className="text-xs text-[#78716C] mt-1 leading-relaxed">{person.role}</p>
+                <p className="text-xs text-[#9B7B72] mt-1 leading-relaxed">{person.role}</p>
               </div>
             </motion.div>
           ))}

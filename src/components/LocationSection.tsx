@@ -15,7 +15,7 @@ export function LocationSection() {
   const shouldReduce = useReducedMotion();
 
   return (
-    <section id="konum" className="py-24 md:py-32 px-6 bg-[#F2EFE6]">
+    <section id="konum" className="py-24 md:py-32 px-6 bg-[#FFF5F0]">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <motion.div
@@ -25,10 +25,10 @@ export function LocationSection() {
           transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] as any }}
           className="mb-12"
         >
-          <p className="text-[10px] tracking-[0.35em] text-[#78716C] uppercase mb-4">
+          <p className="text-[10px] tracking-[0.35em] text-[#9B7B72] uppercase mb-4">
             {t.nav.contact}
           </p>
-          <h2 className="font-serif text-4xl md:text-5xl text-[#1C1917]">
+          <h2 className="font-serif text-4xl md:text-5xl text-[#3A1F1A]">
             {t.location.title}
           </h2>
         </motion.div>
@@ -43,28 +43,28 @@ export function LocationSection() {
             className="lg:col-span-2 flex flex-col gap-6"
           >
             {/* Address */}
-            <div className="flex gap-4 p-6 rounded-2xl border border-[#1C1917]/10 bg-[#EAE5DA]">
-              <span className="w-9 h-9 rounded-full border border-[#1C1917]/12 flex items-center justify-center flex-shrink-0 mt-0.5">
-                <MapPin size={14} className="text-[#78716C]" aria-hidden="true" />
+            <div className="flex gap-4 p-6 rounded-2xl border border-[#3A1F1A]/10 bg-[#FBE0D2]">
+              <span className="w-9 h-9 rounded-full border border-[#3A1F1A]/12 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <MapPin size={14} className="text-[#9B7B72]" aria-hidden="true" />
               </span>
               <div>
-                <p className="text-[10px] tracking-[0.25em] text-[#78716C] uppercase mb-2">
+                <p className="text-[10px] tracking-[0.25em] text-[#9B7B72] uppercase mb-2">
                   {t.location.sub}
                 </p>
-                <p className="text-sm text-[#1C1917] leading-relaxed">
+                <p className="text-sm text-[#3A1F1A] leading-relaxed">
                   1968. Sk. 14B<br />07160 Lara, Muratpaşa<br />Antalya
                 </p>
               </div>
             </div>
 
             {/* Hours */}
-            <div className="flex gap-4 p-6 rounded-2xl border border-[#1C1917]/10 bg-[#EAE5DA]">
-              <span className="w-9 h-9 rounded-full border border-[#1C1917]/12 flex items-center justify-center flex-shrink-0 mt-0.5">
-                <Clock size={14} className="text-[#78716C]" aria-hidden="true" />
+            <div className="flex gap-4 p-6 rounded-2xl border border-[#3A1F1A]/10 bg-[#FBE0D2]">
+              <span className="w-9 h-9 rounded-full border border-[#3A1F1A]/12 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <Clock size={14} className="text-[#9B7B72]" aria-hidden="true" />
               </span>
               <div>
-                <p className="text-sm font-medium text-[#1C1917] mb-1">{t.location.hours}</p>
-                <p className="text-sm text-[#78716C]">{t.location.closed}</p>
+                <p className="text-sm font-medium text-[#3A1F1A] mb-1">{t.location.hours}</p>
+                <p className="text-sm text-[#9B7B72]">{t.location.closed}</p>
               </div>
             </div>
 
@@ -73,7 +73,7 @@ export function LocationSection() {
               href={MAPS_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 border border-[#1C1917]/20 text-[#1C1917] text-sm font-medium px-6 py-3 rounded-full hover:bg-[#1C1917] hover:text-white transition-all duration-200 cursor-pointer w-fit"
+              className="inline-flex items-center gap-2 border border-[#3A1F1A]/20 text-[#3A1F1A] text-sm font-medium px-6 py-3 rounded-full hover:bg-[#3A1F1A] hover:text-white transition-all duration-200 cursor-pointer w-fit"
             >
               <ExternalLink size={13} aria-hidden="true" />
               {t.location.directions}
@@ -86,7 +86,7 @@ export function LocationSection() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-60px" }}
             transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] as any, delay: 0.15 }}
-            className="lg:col-span-3 rounded-2xl overflow-hidden border border-[#1C1917]/10 shadow-sm"
+            className="lg:col-span-3 rounded-2xl overflow-hidden border border-[#3A1F1A]/10 shadow-sm"
             style={{ aspectRatio: "4/3" }}
           >
             <iframe

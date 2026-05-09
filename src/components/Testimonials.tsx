@@ -38,7 +38,7 @@ function Stars() {
   return (
     <div className="flex gap-0.5 mb-4" aria-label="5 yıldız">
       {[...Array(5)].map((_, i) => (
-        <svg key={i} viewBox="0 0 24 24" className="w-4 h-4 fill-[#CA8A04]" aria-hidden="true">
+        <svg key={i} viewBox="0 0 24 24" className="w-4 h-4 fill-[#D4A574]" aria-hidden="true">
           <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
         </svg>
       ))}
@@ -51,15 +51,15 @@ export function Testimonials() {
   const shouldReduce = useReducedMotion();
 
   return (
-    <section className="py-24 md:py-32 px-6 bg-[#EAE5DA]">
+    <section className="py-24 md:py-32 px-6 bg-[#FBE0D2]">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
-          <p className="text-[10px] tracking-[0.35em] text-[#78716C] uppercase mb-4">Reviews</p>
-          <h2 className="font-serif text-4xl md:text-5xl text-[#1C1917]">
+          <p className="text-[10px] tracking-[0.35em] text-[#9B7B72] uppercase mb-4">Reviews</p>
+          <h2 className="font-serif text-4xl md:text-5xl text-[#3A1F1A]">
             {t.testimonials.title}
           </h2>
-          <p className="mt-4 text-sm text-[#78716C]">{t.testimonials.sub}</p>
+          <p className="mt-4 text-sm text-[#9B7B72]">{t.testimonials.sub}</p>
         </div>
 
         {/* Cards grid */}
@@ -71,25 +71,25 @@ export function Testimonials() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] as any, delay: i * 0.07 }}
-              className="bg-[#F2EFE6] border border-[#1C1917]/8 rounded-2xl p-7 flex flex-col gap-4"
+              className="bg-[#FFF5F0] border border-[#3A1F1A]/8 rounded-2xl p-7 flex flex-col gap-4"
             >
               <Stars />
 
               {/* Quote */}
-              <p className="text-sm text-[#44403C] leading-relaxed flex-1">
+              <p className="text-sm text-[#5C3A2D] leading-relaxed flex-1">
                 &ldquo;{review.text}&rdquo;
               </p>
 
               {/* Divider */}
-              <div className="w-8 h-px bg-[#1C1917]/15" />
+              <div className="w-8 h-px bg-[#3A1F1A]/15" />
 
               {/* Author */}
               <div className="flex items-center justify-between">
                 <div>
-                  <p className="text-sm font-semibold text-[#1C1917]">{review.name}</p>
-                  <p className="text-xs text-[#78716C] mt-0.5">{review.location}</p>
+                  <p className="text-sm font-semibold text-[#3A1F1A]">{review.name}</p>
+                  <p className="text-xs text-[#9B7B72] mt-0.5">{review.location}</p>
                 </div>
-                <span className="text-[10px] tracking-wide text-[#78716C] border border-[#1C1917]/15 rounded-full px-3 py-1">
+                <span className="text-[10px] tracking-wide text-[#9B7B72] border border-[#3A1F1A]/15 rounded-full px-3 py-1">
                   {review.service}
                 </span>
               </div>

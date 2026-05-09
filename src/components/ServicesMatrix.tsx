@@ -12,7 +12,7 @@ function SectionSakura() {
     <svg
       aria-hidden="true"
       viewBox="0 0 400 400"
-      className="absolute -right-16 -top-16 w-72 h-72 text-[#1C1917] opacity-[0.03] pointer-events-none"
+      className="absolute -right-16 -top-16 w-72 h-72 text-[#3A1F1A] opacity-[0.03] pointer-events-none"
       fill="currentColor"
     >
       <g transform="translate(200 200) scale(1.6)">
@@ -40,10 +40,10 @@ const gridSpans = [
 ];
 
 const cardAccents = [
-  "bg-[#E8E3D8]", // warm stone — Hair
-  "bg-[#F2EFE6]", // cream — Nail
-  "bg-[#F2EFE6]", // cream — Lashes
-  "bg-[#E8E3D8]", // warm stone — Lifting
+  "bg-[#F5D5C5]", // warm stone — Hair
+  "bg-[#FFF5F0]", // cream — Nail
+  "bg-[#FFF5F0]", // cream — Lashes
+  "bg-[#F5D5C5]", // warm stone — Lifting
 ];
 
 export function ServicesMatrix() {
@@ -59,13 +59,13 @@ export function ServicesMatrix() {
       <div className="max-w-7xl mx-auto">
         {/* Section header */}
         <div className="mb-16 max-w-xl">
-          <p className="text-[10px] tracking-[0.35em] text-[#78716C] uppercase mb-4">
+          <p className="text-[10px] tracking-[0.35em] text-[#9B7B72] uppercase mb-4">
             {t.nav.services}
           </p>
-          <h2 className="font-serif text-4xl md:text-5xl text-[#1C1917] leading-tight">
+          <h2 className="font-serif text-4xl md:text-5xl text-[#3A1F1A] leading-tight">
             {t.services.title}
           </h2>
-          <p className="mt-4 text-sm text-[#78716C] leading-relaxed">{t.services.sub}</p>
+          <p className="mt-4 text-sm text-[#9B7B72] leading-relaxed">{t.services.sub}</p>
         </div>
 
         {/* Bento grid */}
@@ -79,34 +79,34 @@ export function ServicesMatrix() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-60px" }}
                 transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] as any, delay: i * 0.07 }}
-                className={`${gridSpans[i]} ${cardAccents[i]} border border-[#1C1917]/10 rounded-2xl p-8 flex flex-col gap-6 group hover:border-[#1C1917]/25 transition-colors duration-300`}
+                className={`${gridSpans[i]} ${cardAccents[i]} border border-[#3A1F1A]/10 rounded-2xl p-8 flex flex-col gap-6 group hover:border-[#3A1F1A]/25 transition-colors duration-300`}
               >
                 {/* Card header */}
                 <div className="flex items-start justify-between">
                   <div>
-                    <p className="text-[9px] tracking-[0.3em] text-[#78716C] uppercase mb-2">
+                    <p className="text-[9px] tracking-[0.3em] text-[#9B7B72] uppercase mb-2">
                       {cat.tag}
                     </p>
-                    <h3 className="font-serif text-xl md:text-2xl text-[#1C1917]">{cat.name}</h3>
+                    <h3 className="font-serif text-xl md:text-2xl text-[#3A1F1A]">{cat.name}</h3>
                   </div>
-                  <span className="w-9 h-9 rounded-full border border-[#1C1917]/12 flex items-center justify-center bg-white/60 flex-shrink-0 group-hover:bg-[#1C1917] group-hover:border-[#1C1917] transition-all duration-300">
+                  <span className="w-9 h-9 rounded-full border border-[#3A1F1A]/12 flex items-center justify-center bg-white/60 flex-shrink-0 group-hover:bg-[#3A1F1A] group-hover:border-[#3A1F1A] transition-all duration-300">
                     <Icon
                       size={14}
-                      className="text-[#78716C] group-hover:text-white transition-colors duration-300"
+                      className="text-[#9B7B72] group-hover:text-white transition-colors duration-300"
                       aria-hidden="true"
                     />
                   </span>
                 </div>
 
                 {/* Divider */}
-                <div className="w-8 h-px bg-[#1C1917]/15" />
+                <div className="w-8 h-px bg-[#3A1F1A]/15" />
 
                 {/* Service items */}
                 <ul className="space-y-2.5 flex-1">
                   {cat.items.map((item) => (
-                    <li key={item} className="flex items-center gap-3 text-sm text-[#78716C]">
+                    <li key={item} className="flex items-center gap-3 text-sm text-[#9B7B72]">
                       <span
-                        className="w-1 h-1 rounded-full bg-[#1C1917]/30 flex-shrink-0"
+                        className="w-1 h-1 rounded-full bg-[#3A1F1A]/30 flex-shrink-0"
                         aria-hidden="true"
                       />
                       {item}

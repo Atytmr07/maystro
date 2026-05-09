@@ -36,7 +36,7 @@ function GalleryPhoto({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-50px" }}
       transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] as any, delay: index * 0.07 }}
-      className="relative block overflow-hidden rounded-xl border border-[#1C1917]/8 group cursor-pointer bg-[#E8E3D8]"
+      className="relative block overflow-hidden rounded-xl border border-[#3A1F1A]/8 group cursor-pointer bg-[#F5D5C5]"
       style={{ aspectRatio: "3/4" }}
     >
       {!failed && (
@@ -53,9 +53,9 @@ function GalleryPhoto({
       <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent pointer-events-none" />
 
       {/* Hover overlay */}
-      <div className="absolute inset-0 flex items-center justify-center bg-[#1C1917]/0 group-hover:bg-[#1C1917]/15 transition-colors duration-300">
+      <div className="absolute inset-0 flex items-center justify-center bg-[#3A1F1A]/0 group-hover:bg-[#3A1F1A]/15 transition-colors duration-300">
         <div className="w-10 h-10 rounded-full bg-white/0 group-hover:bg-white/90 flex items-center justify-center opacity-0 group-hover:opacity-100 scale-90 group-hover:scale-100 transition-all duration-300">
-          <ArrowUpRight size={14} className="text-[#1C1917]" aria-hidden="true" />
+          <ArrowUpRight size={14} className="text-[#3A1F1A]" aria-hidden="true" />
         </div>
       </div>
     </motion.a>
@@ -67,14 +67,14 @@ export function GallerySection() {
   const shouldReduce = useReducedMotion();
 
   return (
-    <section id="galeri" className="py-24 md:py-32 px-6 bg-[#F2EFE6]">
+    <section id="galeri" className="py-24 md:py-32 px-6 bg-[#FFF5F0]">
       <div className="max-w-7xl mx-auto">
         <div className="flex items-end justify-between mb-12">
           <div>
-            <p className="text-[10px] tracking-[0.35em] text-[#78716C] uppercase mb-4">
+            <p className="text-[10px] tracking-[0.35em] text-[#9B7B72] uppercase mb-4">
               @maystro.studioo
             </p>
-            <h2 className="font-serif text-4xl md:text-5xl text-[#1C1917]">
+            <h2 className="font-serif text-4xl md:text-5xl text-[#3A1F1A]">
               {t.gallery.title}
             </h2>
           </div>
@@ -82,7 +82,7 @@ export function GallerySection() {
             href={INSTAGRAM}
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden md:flex items-center gap-1.5 text-sm text-[#78716C] hover:text-[#1C1917] transition-colors duration-200 cursor-pointer group"
+            className="hidden md:flex items-center gap-1.5 text-sm text-[#9B7B72] hover:text-[#3A1F1A] transition-colors duration-200 cursor-pointer group"
           >
             {t.gallery.more}
             <ArrowUpRight size={14} className="transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" aria-hidden="true" />
@@ -100,7 +100,7 @@ export function GallerySection() {
             href={INSTAGRAM}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 text-sm text-[#78716C] cursor-pointer"
+            className="inline-flex items-center gap-1.5 text-sm text-[#9B7B72] cursor-pointer"
           >
             {t.gallery.more}
             <ArrowUpRight size={14} aria-hidden="true" />
